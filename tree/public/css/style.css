@@ -1,0 +1,47 @@
+.add-form-cnt, .delete-form-cnt {
+    margin-top: 10px;
+}
+#treeview, #treeview ul, #treeview li {
+    position: relative;
+}
+#treeview {
+    list-style: none;
+    padding-left: 20px;
+}
+
+#treeview ul {
+    list-style: none;
+    padding-left: 32px;
+}
+
+#treeview li::before, #treeview li::after {
+    content: "";
+    position: absolute;
+    left: -12px;
+}
+
+#treeview li::before {
+    border-top: 2px solid #428bca;
+    top: 9px;
+    width: 8px;
+    height: 0;
+}
+
+#treeview li::after {
+    border-left: 2px solid #428bca;
+    height: 100%;
+    width: 0px;
+    top: 2px;
+}
+
+#treeview ul > li:last-child::after {
+    height: 8px;
+}
+
+.nested {
+    display: none;
+}
+
+.active {
+    display: block;
+}
